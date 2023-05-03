@@ -6,7 +6,7 @@
 /*   By: yfawzi <yfawzi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/07 02:29:29 by yfawzi            #+#    #+#             */
-/*   Updated: 2023/05/03 23:06:36 by yfawzi           ###   ########.fr       */
+/*   Updated: 2023/05/04 00:12:33 by yfawzi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,4 +95,5 @@ void	ft_write(int moves)
 	f = ft_itoa(moves);
 	ft_putstr_fd(f, 1);
 	write(1, "\n", 1);
+	free(f);
 }

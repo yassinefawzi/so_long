@@ -6,7 +6,7 @@
 /*   By: yfawzi <yfawzi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/29 17:00:13 by yfawzi            #+#    #+#             */
-/*   Updated: 2023/05/03 21:58:01 by yfawzi           ###   ########.fr       */
+/*   Updated: 2023/05/03 23:58:17 by yfawzi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,8 +102,8 @@ void	find_path(char **map, int i, int j)
 	j = lookforj(map1);
 	map1 = lookforpath(i, j, map1);
 	scheck(map1, 'C', 0, 0);
+	ft_free(map1);
 	map2 = lookforpathe(i, j, map2);
 	scheck(map2, 'E', 0, 0);
-	ft_free(map1);
 	ft_free(map2);
 }

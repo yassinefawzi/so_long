@@ -6,7 +6,7 @@
 /*   By: yfawzi <yfawzi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 23:30:10 by yfawzi            #+#    #+#             */
-/*   Updated: 2023/05/03 23:07:11 by yfawzi           ###   ########.fr       */
+/*   Updated: 2023/05/04 00:07:04 by yfawzi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,5 +115,6 @@ int	main(int arc, char **arv)
 	}
 	else
 		ft_putstr_fd("Invalide number of arguments.\n", 2);
+	system("leaks so_long");
 	return (0);
 }
